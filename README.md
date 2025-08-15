@@ -1,0 +1,1 @@
+This Github repo provides all the code for the paper submitted to Nature Climate Change "Delayed formation of Arctic snow cover in response to wildland fires in a warming climate". If there is anything missing or that needs further clarification, please don't hesitate to get in touch: yamin.qing@connect.polyu.hk.
