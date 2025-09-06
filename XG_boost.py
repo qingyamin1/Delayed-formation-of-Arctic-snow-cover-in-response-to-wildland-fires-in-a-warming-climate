@@ -45,7 +45,7 @@ def train_xgb_model(X, y, param_grid, search_type="random"):
     start_time = time.time()
     gpu_status = torch.cuda.is_available()
     
-    outer_cv = StratifiedKFold(n_splits=3, shuffle=True, random_state=42)
+    outer_cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
     best_model = None
     all_f2_scores = []
 
@@ -64,12 +64,12 @@ def train_xgb_model(X, y, param_grid, search_type="random"):
 
         if search_type == "random":
             search = RandomizedSearchCV(
-                model, param_grid, scoring=f2_scorer, n_iter=10, cv=2, verbose=1
+                model, param_grid, scoring=f2_scorer, n_iter=10, cv=5, verbose=1
             )
         else:
             from sklearn.model_selection import GridSearchCV
             search = GridSearchCV(
-                model, param_grid, scoring=f2_scorer, cv=2, verbose=1
+                model, param_grid, scoring=f2_scorer, cv=5, verbose=1
             )
 
         search.fit(X_train_cv, y_train_cv)
