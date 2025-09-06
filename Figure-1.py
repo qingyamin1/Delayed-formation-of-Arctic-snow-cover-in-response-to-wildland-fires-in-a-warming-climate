@@ -20,6 +20,7 @@ FONTSIZE_PANEL = 18
 # File paths
 PATH_SNOW = 'Figure-1-data/Snow-cover-duration-60-pentad-yearmean.nc'
 PATH_FIRE = 'Figure-1-data/FireCCILT11-1982-2019-BA-yearmean.nc'
+###  multiple annual BA data is processed from Google Earth Engine
 PATH_DATA_CSV = 'Figure-1-data/1982-2019-muti-BA-and-DU.csv'
 OUTPUT_FIG = 'Figure-1.png'
 
