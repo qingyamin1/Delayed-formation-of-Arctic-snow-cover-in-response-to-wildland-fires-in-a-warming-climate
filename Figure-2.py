@@ -59,7 +59,7 @@ def plot_trend(ax, x, y, ylabel, panel_label, color='black'):
         fontsize=5, frameon=False, loc='upper left')
 
     ax.set_ylabel(ylabel, fontsize=7)
-    ax.set_xticks([0, 8, 18, 28, 36])
+    ax.set_xticks([0, 8, 17, 27, 36])
     ax.set_xticklabels(YEARS_LABELS, fontsize=6)
     ax.tick_params(direction='out', length=1, labelsize=6)
 
