@@ -192,7 +192,6 @@ nsample<- 1
 bootmethod <- 'random'
 graphics  <- TRUE
 figtype   <- 'series'
-proxytype <- 'precipitation'
 
 sea_out <- sea_dbl(events, y, yr, preyr, postyr, dbl, nboot, nboot_event,
                    nsample, graphics, figtype, bootmethod, proxytype)
